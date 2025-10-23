@@ -1,0 +1,149 @@
+:root {
+  --font-family: "Inter", sans-serif;
+  --second-family: "Poppins", sans-serif;
+  --mainbodyColor : #17191C;
+  --secondBodyColor: rgba(196, 184, 184, 0.788);
+  --mainTextColor : rgb(245, 242, 242);
+  --secondaryText: black;
+  --mainDesignColor:  #31A8FF;
+  --secondDesigncolor : #07bed2eb;
+}
+*{
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1480px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center{
+    align-items: center;
+}
+ul,li{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6,p,span{
+    padding: 0;
+    margin: 0;
+}
+body{
+  background-color: var(--mainbodyColor);  
+}
+
+/* nav starts here */
+nav{
+ box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+ nav img{
+   width: 150px;
+ }
+ nav ul li{
+    padding: 8px 12px;
+    margin: 0 4px;
+ }
+nav ul li.nav-item {
+  position: relative;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+nav ul li a.nav-link {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--mainTextColor) !important;
+  transition: 0.3s;
+  position: relative;
+  padding: 5px 10px;
+}
+
+nav ul li.nav-item:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  background-color: black;
+  border-radius: 3px;
+  box-shadow: rgba(43, 20, 126, 0.402) 0px 3px 8px;
+}
+
+nav ul li.nav-item:hover a {
+  color: var(--mainDesignColor);
+}
+
+nav ul li a.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: var(--mainDesignColor);
+  transform: translateX(-50%);
+  transition: 0.3s;
+}
+
+nav ul li a.nav-link::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  transform: translateX(-50%) rotate(45deg);
+  width: 6px;
+  height: 6px;
+  background: var(--mainDesignColor);
+  opacity: 0;
+  transition: 0.4s;
+}
+
+nav ul li.nav-item:hover a.nav-link::after {
+  width: 100%;
+}
+
+nav ul li.nav-item:hover a.nav-link::before {
+  opacity: 1;
+}
+ nav.navbar .btn.btn-primary {
+  background: #31a8ff;
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 3px;
+  width: 182px;
+
+}
+
+nav.navbar .btn.btn-primary:hover {
+  outline: #31a8ff;
+  background-color: transparent;
+  transform: scale(1.05);
+   transition: all 0.3s ease;
+}
+
+nav button i{
+ color: var(--mainTextColor);
+ font-size: 28px;
+}
+nav .navbar-collapse button i{
+  font-size: 14px;
+}
+/* nav ends here */
+
+/* offcanvass starts */
+.offcanvas{
+  background-color: var(--mainbodyColor);
+  max-width: 80%;
+}
+.offcanvas .btn-close{
+   filter: invert(1);
+ font-size: 20px;
+}
+.offcanvas  button i{
+  font-size: 14px;
+}
+
+/* offcanvas ends */
+
