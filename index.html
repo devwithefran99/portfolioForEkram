@@ -9,8 +9,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
    <link rel="stylesheet" href="./assets/css/style.css">
+   <link rel="stylesheet" href="./assets/css/responsive.css">
     <!-- link part ends here -->
 </head>
 <body>
@@ -81,17 +83,118 @@
 
 <main>
 <!-- hero part starts -->
-<section id="hero">
+ <section class="hero py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Left image -->
+        <div class="col-lg-4 col-12">
+          <div class="hero-img">
+            <img src="./assets/images/Vector.png" alt="Profile" class="img-fluid">
+          </div>
+        </div>
+        <!-- Middle text -->
+        <div class="col-lg-7 col-12 my-auto justify-content-center heroText">
+          <p class="intro-text mb-1">Hello I’M</p>
+          <h1 class="fw-bold">Ekram Husain</h1>
+          <h3 class="fw-semibold text-primary typed">A Graphics & UI UX Designer</h3>
+          <p class="mt-3 mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+          <a href="#" class="btn btn-outline-primary px-4 py-2">About me</a>
+        </div>
+
+        <!-- Right social sidebar -->
+        <div class="col-lg-1 d-none d-lg-flex align-items-center justify-content-center">
+       <div class="social-sidebar">
+         <ul class="list-unstyled m-0 p-0">
+           <li><a href="#"><i class="bi bi-behance"></i></a></li>
+           <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+           <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+           <li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+           <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+         </ul>
+         <p class="follow-text">Follow me:</p>
+       </div>
+</div>
+      </div>
+    </div>
+  </section>
+<!-- hero parts ends -->
+
+<!-- skill parts starts here -->
+
+<section class="skills-section py-5">
   <div class="container">
-    <div class="row">
-     
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="skill-card" data-aos="fade-right">
+          <h5>Adobe Photoshop</h5>
+          <div class="skill-icon">
+            <img src="./assets/images/Group 120.png" alt="">
+          </div>
+          <div class="progress-container">
+            <div class="progress-bar" data-value="70">
+              <span class="progress-value">0%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="skill-card"data-aos="fade-right">
+          <h5>Adobe Xd</h5>
+          <div class="skill-icon">
+            <img src="./assets/images/Group 124.png"alt="">
+          </div>
+          <div class="progress-container">
+  <div class="progress-bar" data-value="70"></div>
+  <div class="progress-value-box">0%</div>
+</div>
+
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="skill-card"data-aos="fade-right">
+          <h5>Adobe Illustrator</h5>
+          <div class="skill-icon">
+            <img src="./assets/images/Group.png" alt="">
+          </div>
+          <div class="progress-container">
+            <div class="progress-bar" data-value="80"></div>
+            <span class="progress-value">0%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="skill-card"data-aos="fade-right">
+          <h5>Figma</h5>
+          <div class="skill-icon">
+            <img src="./assets/images/Group 48.png" alt="">
+          </div>
+          <div class="progress-container">
+            <div class="progress-bar" data-value="80"></div>
+            <span class="progress-value">0%</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
-<!-- hero parts ends -->
+<!-- skill parts ends  -->
+
 </main>
 
-    <script src="./assets/js/apps.js"></script>
+<!-- js link here -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/apps.js"></script>
+    <!-- js link ends -->
 </body>
 </html>

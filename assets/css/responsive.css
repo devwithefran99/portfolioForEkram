@@ -1,0 +1,16 @@
+@media (max-width: 991px) {
+  .sidebar {
+    display: none !important;
+  }
+
+  .hero {
+    text-align: center;
+  }
+  .hero-img img {
+  max-width: 100%;
+  margin-left: 0px;
+}
+.intro-text{
+  margin-top: 20px;
+}
+}
