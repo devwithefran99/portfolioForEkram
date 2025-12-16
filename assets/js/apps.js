@@ -30,7 +30,30 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// * my work slider
+let index = 0;
 
+function getVisibleCards() {
+return window.innerWidth < 768 ? 1 : 3;
+}
+
+
+function slideNext() {
+const track = document.getElementById('sliderTrack');
+const cards = track.children.length;
+const visible = getVisibleCards();
+if (index < cards - visible) index++;
+track.style.transform = `translateX(-${index * (100 / visible)}%)`;
+}
+
+
+function slidePrev() {
+const track = document.getElementById('sliderTrack');
+const visible = getVisibleCards();
+if (index > 0) index--;
+track.style.transform = `translateX(-${index * (100 / visible)}%)`;
+}
+// *my work slider ends
 
 var typed = new Typed('.typed', 
     {

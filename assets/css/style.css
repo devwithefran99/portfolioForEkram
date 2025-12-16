@@ -233,6 +233,30 @@ nav .navbar-collapse button i{
   background: #1e2227;
 }
 
+.skilltext {
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+.skilltext h2{
+font-family: var(--font-family);
+font-weight: 700;
+font-size: 40px;
+color:var(--mainTextColor);
+}
+.skillContent{
+    justify-content: center;
+  text-align: center;
+  margin: auto;
+  padding-top: 20px;
+}
+.skillContent p{
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 15px;
+text-align: center;
+color: var(--mainTextColor);
+}
 .skill-card {
   background: #2a2f36;
   border-radius: 12px;
@@ -296,4 +320,108 @@ nav .navbar-collapse button i{
 }
 
 /* skill parts ends  */
+
+/* myWork part css */
+.section-title{
+color: var(--mainTextColor);
+padding: 6px 14px;
+border-radius: 4px;
+font-size: 40px;
+font-weight: 600;
+}
+.filter-btn{
+  background-color: #1e2227;
+  color: #fff;
+padding: 6px 14px;
+border-radius: 4px;
+margin: 0 6px;
+}
+
+.work-card {
+background: #151b22;
+border-radius:6px;
+overflow: hidden;
+transition: transform .3s ease;
+padding-bottom: 20px;
+}
+
+
+.work-card:hover {
+transform: translateY(-5px);
+}
+
+
+.work-card img {
+width: 100%;
+height: 220px;
+object-fit: cover;
+}
+
+
+.work-card .content {
+padding: 15px;
+}
+.work-card .content h6{
+  font-family: var(--font-family);
+font-weight: 500;
+font-size: 18px;
+letter-spacing: 0.02em;
+color: #fff;
+margin-top: 10px;
+}
+.moreBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  border-radius: 3px;
+  height: 44px;
+  background-color: var(--mainDesignColor);
+  color: #fff;
+  margin: auto;
+  text-decoration: none;
+}
+.date {
+font-size: 14px;
+color: #8b949e;
+}
+
+
+.slider-wrapper {
+overflow: hidden;
+position: relative;
+}
+
+
+.slider-track {
+display: flex;
+transition: transform .6s ease-in-out;
+}
+
+
+/* FIX: slider item width control */
+.slider-track > div {
+flex: 0 0 33.3333%;
+max-width: 33.3333%;
+}
+
+
+@media (max-width: 767px) {
+.slider-track > div {
+flex: 0 0 100%;
+max-width: 100%;
+}
+}
+
+
+.nav-btn {
+background: transparent;
+border: 1px solid #1e90ff;
+color: #fff;
+width: 35px;
+height: 35px;
+border-radius: 6px;
+}
+
+/* myWork ends here */
 

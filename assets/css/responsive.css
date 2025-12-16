@@ -13,4 +13,18 @@
 .intro-text{
   margin-top: 20px;
 }
+.skilltext h2{
+  font-size: 30px;
 }
+.section-title{
+  font-size: 30px;
+}
+.filter-btn{
+  font-size: 13px;
+}
+.nav-btn {
+  width: 30px;
+height: 30px;
+}
+}
+
