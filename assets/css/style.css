@@ -422,6 +422,259 @@ width: 35px;
 height: 35px;
 border-radius: 6px;
 }
-
 /* myWork ends here */
 
+/* education & experience part  */
+#educationPart{
+  margin-bottom: 30px;
+}
+.icon-box {
+  width: 44px;
+  height: 44px;
+  background: #0d6efd;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+/* ended */
+
+/* about me starts */
+.card-box {
+  background: #2a2f36;
+  border-radius: 22px;
+  padding: 32px;
+  color: #fff;
+}
+
+.aboutBtn a{
+   background: var(--mainDesignColor);
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  width: 182px;
+}
+
+.profile-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-img-wrapper {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.email {
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+.status {
+  font-size: 14px;
+  color: var(--mainDesignColor);
+}
+
+.role {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.role p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.icon.red {
+  background: #ff4d4d;
+}
+
+.icon.black {
+  background: #000;
+}
+
+.apps span {
+  margin-right: 14px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* about me */
+
+/* contact part starts */
+.contact-section {
+  background: #1f242b;
+  color: #fff;
+}
+
+.contact-title {
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+
+}
+
+.contact-card {
+  background: #2a2f36;
+  padding: 30px;
+  border-radius: 12px;
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.contact-card h5 span {
+  color: #0d6efd;
+}
+
+.contact-card .form-control {
+  background: #3a3f46;
+  border: none;
+  color: #fff;
+}
+
+.contact-card .form-control::placeholder {
+  color: #aaa;
+}
+
+.contact-card .form-control:focus {
+  box-shadow: 0 0 0 1px #0d6efd;
+}
+
+.send-btn {
+  background: #6c757d;
+  color: #fff;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  background: #0d6efd;
+}
+
+.contact-info .info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.info-item i {
+  font-size: 22px;
+  background: #0d6efd;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 22px;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+.social-icons  a:hover i {
+ background-color: transparent;
+ color: var(--mainDesignColor);
+ transition: 0.3s;
+}
+/* contact part ends */
+
+/* clints parts starts */
+
+.client-feedback-section {
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+
+.section-title {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.side-img {
+  max-width: 180px;
+}
+
+.feedback-slider {
+  text-align: center;
+  min-height: 300px;
+}
+
+.feedback-item {
+  display: none;
+}
+
+.feedback-item.active {
+  display: block;
+}
+
+.client-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.location {
+  font-size: 13px;
+  color: #3fa9f5;
+}
+
+.stars {
+  color: #3fa9f5;
+  margin: 10px 0;
+}
+
+.feedback-item p {
+  font-size: 15px;
+  color: #d1d1d1;
+}
+
+.slider-dots {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.slider-dots .dot {
+  width: 22px;
+  height: 4px;
+  background: #555;
+  display: inline-block;
+  margin: 0 4px;
+  border-radius: 10px;
+}
+
+.slider-dots .dot.active {
+  background: #3fa9f5;
+}
+
+/* clints parts ends */
